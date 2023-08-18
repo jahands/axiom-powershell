@@ -20,6 +20,7 @@ class AxiomLogger {
 		$this.ingestHeaders = @{"Authorization" = "Bearer $($apiToken)" }
 		$this.flushAfterSeconds = 10
 		$this.flushAfterLogs = 20
+        $this.tags = $tags
 	}
 
 	[AxiomLogger] FlushAfterSeconds([int]$seconds) {
